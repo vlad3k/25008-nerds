@@ -29,8 +29,13 @@
                 </div>
             </div>
         </header>
-        <main class="container">
-            <h1>Магазин готовых шаблонов</h1>
+        <div class="main-title">
+               <!--широкий серый фон:)-->
+            <div class="container">  
+                <h1>Магазин готовых шаблонов</h1>
+            </div> 
+        </div>    
+        <main class="container">    
             <form class="filters" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="fil">
                     <legend>Стоймость:</legend>
@@ -45,26 +50,25 @@
                         </div>
              
                     </div>
-                </fieldset>
             
                     <label for="from">От:</label><input id="from" type="text" name="from">
                     <label for="before">До:</label><input id="before" type="text" name="before">
-                
-                    <fieldset>
-                        <legend>Сетка:</legend>
-                        <input id="adaptive" type="radio" name="view" checked><label for="adaptive">Адаптивная</label>
-                        <input id="fix" type="radio" name="view"><label for="fix">Фиксированная</label>
-                        <input id="rubber" type="radio" name="view"><label for="rubber">Резиновая</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Особенности:</legend>
-                        <input id="slider" type="checkbox" name="slider" checked><label for="slider">Слайдер</label>
-                        <input id="advantage" type="checkbox" name="advantages"><label for="advantage">Блок преемуществ</label>
-                        <input id="news" type="checkbox" name="news" checked><label for="news">Новости</label>
-                        <input id="gallery" type="checkbox" name="gallery"><label for="gallery">Галерея</label>
-                        <input id="basket" type="checkbox" name="basket"><label for="basket">Корзина</label>
-                    </fieldset>
-                    <input type="submit" name="show" value="Показать">
+                </fieldset>
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <input id="adaptive" type="radio" name="view" checked><label for="adaptive">Адаптивная</label>
+                    <input id="fix" type="radio" name="view"><label for="fix">Фиксированная</label>
+                    <input id="rubber" type="radio" name="view"><label for="rubber">Резиновая</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <input id="slider" type="checkbox" name="slider" checked><label for="slider">Слайдер</label>
+                    <input id="advantage" type="checkbox" name="advantages"><label for="advantage">Блок преемуществ</label>
+                    <input id="news" type="checkbox" name="news" checked><label for="news">Новости</label>
+                    <input id="gallery" type="checkbox" name="gallery"><label for="gallery">Галерея</label>
+                    <input id="basket" type="checkbox" name="basket"><label for="basket">Корзина</label>
+                </fieldset>
+                <input type="submit" name="show" value="Показать">
             </form>
             <div class="fil">
                 <p class="fil-item">Сортировать:</p>
@@ -74,8 +78,8 @@
                     <a href="#">По названию</a>
                 </div>
                 <div class="arrows">
-                    <a class="down active-arrow" href="#"></a> <!--Стрелочки для сортировки по названию-->
-                    <a class="up" href="#"></a>
+                    <a class="down active-arrow" href="#">По убыванию</a> <!--Стрелочки для сортировки по названию-->
+                    <a class="up" href="#">По возрастанию</a>
                 </div>
             </div>
             <div class="projects">
