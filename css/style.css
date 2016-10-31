@@ -19,3 +19,276 @@ h2 {
     color: #000000;
     font-weight: bold;
 }
+
+.slogan-header{
+    
+}
+
+.main-header{
+    margin-bottom: 85px;
+}
+
+.container{
+    width: 1160px;
+    margin: 0 20px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.logo{
+    width: 160px;
+    display: block;
+    float: left;
+    margin-right: 40px;
+    margin-top: 50px;
+    vertical-align: middle;
+}
+
+.main-navigation{
+    width: 760px;
+    float: left;
+    margin-right: 40px;
+    vertical-align: middle;
+    margin-top: 50px;
+    
+}
+
+.main-navigation li{
+    display: inline;
+}
+
+.basket-block{
+    width: 160px;
+    float: right;
+    margin-top: 50px;
+    
+    
+}
+
+.tagline-main{
+    
+    margin-bottom: 80px;
+}
+
+.tagline{
+    width: 380px;
+}
+
+.service {
+    margin-bottom: 160px;
+}
+
+.service-item{
+    width: 300px;
+}
+
+.websites{
+    float: left;
+    margin-right: 100px;
+}
+
+.apps{
+    float: left;
+    margin-right: 100px;
+}
+
+.presentation{
+    float: left;
+    margin-right: 60px;
+}
+
+.studio{
+    width: 660px;
+    float: left;
+    margin-right: 140px;
+}
+
+.achievements{
+    width: 360px;
+    float: right;
+    
+}
+
+.logo2{
+    float: left;
+}
+
+.achievement-title{ 
+   
+}
+
+.achievement-items{
+    
+}
+
+.achievement-item{
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.block-studio-achievements{
+    margin-bottom: 70px;
+    
+}
+
+
+.projects{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    
+    
+
+}
+
+.project1{
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 95px;
+}
+
+.project2{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 103px;
+}
+
+.project3{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 121px;
+}
+
+.project4{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.main-footer{
+    margin-top: 80px;
+}
+
+.footer-social{
+    float: left;
+    margin-right: 140px;
+}
+
+.footer-text{
+    float: left;
+}
+
+.social-btn-vk{
+    margin-right: 12px;
+}
+
+.social-btn-fb{
+    margin-right: 12px;
+}
+
+
+
+
+
+h1{
+    text-align: center;
+    padding-bottom: 117px;
+}
+
+#from,
+#before{
+    width: 80px;
+}
+
+.filter{
+    margin-bottom: 62px;
+}
+
+
+.layouts{
+    clear: both;
+    margin-bottom: 51px;
+}
+
+.layout{
+float: left;
+width: 200px
+}
+
+#adaptive,
+#fix,
+#rubber{
+    float: left;
+}
+
+
+
+.features{
+    clear: both;
+}
+
+
+#slider,
+#advantage,
+#news,
+#gallery,
+#basket{
+    float: left;
+}
+
+.feature{
+    float: left;
+    width: 200px;
+}
+
+
+
+
+.filters{
+    float: left;
+    width: 260px;
+    margin-right: 140px;
+    padding-bottom: 1390px;
+    background-color: chocolate
+}
+
+.main-projects{
+    background-color: mediumspringgreen
+    float: right;
+    width: auto;
+    
+}
+
+.fil{
+    background-color: red;
+    vertical-align: top;
+}
+
+.project{
+    display: inline-block;
+    
+}
+
+.fil-item{
+    background-color: azure;
+    display:inline-block;
+    
+}
+
+.price-type-name{
+    background-color: azure;
+    display:inline-block;
+}
+
+.arrows{
+    background-color: greenyellow;
+    display:inline-block;
+}
+

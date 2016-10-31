@@ -2,11 +2,12 @@
 <html lang="Ru">
     <head>
         <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
         <title>Nerds</title>
     </head>
     <body>
         <header class="main-header">
-            <div class="container">
+            <div class="container clearfix">
                 <a class="logo" href="#"><img src="img/logo-nerds.png" alt=""></a>
                 <nav class="main-navigation">
                     <ul>
@@ -54,52 +55,54 @@
                     <label for="from">От:</label><input id="from" type="text" name="from">
                     <label for="before">До:</label><input id="before" type="text" name="before">
                 </fieldset>
-                <fieldset>
+                <fieldset class="layouts clearfix">
                     <legend>Сетка:</legend>
-                    <input id="adaptive" type="radio" name="view" checked><label for="adaptive">Адаптивная</label>
-                    <input id="fix" type="radio" name="view"><label for="fix">Фиксированная</label>
-                    <input id="rubber" type="radio" name="view"><label for="rubber">Резиновая</label>
+                    <input id="adaptive" type="radio" name="view" checked><label class="layout" for="adaptive">Адаптивная</label>
+                    <input id="fix" type="radio" name="view"><label class="layout" for="fix">Фиксированная</label>
+                    <input id="rubber" type="radio" name="view"><label class="layout" for="rubber">Резиновая</label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="features clearfix">
                     <legend>Особенности:</legend>
-                    <input id="slider" type="checkbox" name="slider" checked><label for="slider">Слайдер</label>
-                    <input id="advantage" type="checkbox" name="advantages"><label for="advantage">Блок преемуществ</label>
-                    <input id="news" type="checkbox" name="news" checked><label for="news">Новости</label>
-                    <input id="gallery" type="checkbox" name="gallery"><label for="gallery">Галерея</label>
-                    <input id="basket" type="checkbox" name="basket"><label for="basket">Корзина</label>
+                    <input id="slider" class="features" type="checkbox" name="slider" checked><label class="feature" for="slider">Слайдер</label>
+                    <input id="advantage" type="checkbox" name="advantages"><label class="feature" for="advantage">Блок преемуществ</label>
+                    <input id="news" type="checkbox" name="news" checked><label class="feature" for="news">Новости</label>
+                    <input id="gallery" type="checkbox" name="gallery"><label class="feature" for="gallery">Галерея</label>
+                    <input id="basket" type="checkbox" name="basket"><label class="feature" for="basket">Корзина</label>
                 </fieldset>
                 <input type="submit" name="show" value="Показать">
             </form>
-            <div class="fil">
-                <p class="fil-item">Сортировать:</p>
-                <div class="price-type-name">
-                    <a class="active" href="#">По цене</a>
-                    <a href="#">По типу</a>
-                    <a href="#">По названию</a>
+            <div class="main-projects">
+                <div class="fil">
+                    <p class="fil-item">Сортировать:</p>
+                    <div class="price-type-name">
+                        <a class="active" href="#">По цене</a>
+                        <a href="#">По типу</a>
+                        <a href="#">По названию</a>
+                    </div>
+                    <div class="arrows">
+                        <a class="down active-arrow" href="#">По убыванию</a> <!--Стрелочки для сортировки по названию-->
+                        <a class="up" href="#">По возрастанию</a>
+                    </div>
                 </div>
-                <div class="arrows">
-                    <a class="down active-arrow" href="#">По убыванию</a> <!--Стрелочки для сортировки по названию-->
-                    <a class="up" href="#">По возрастанию</a>
+                <div class="projects ">
+                    <div class="project">
+                        <img src="img/img-sedona.jpg" alt="">
+                        <a class="title" href="#">Sedona</a>
+                        <p class="description">Информационный сайт для туристов</p>
+                        <a class="price" href="#">9 900 руб.</a>
+                    </div>
+                    <img class="project" src="img/img-pink.jpg" href="#" alt="">
+                    <img class="project" src="img/img-barbershop.jpg" href="#" alt="">
+                    <img class="project" src="img/img-mishka.jpg" href="#" alt="">
+                    <img class="project" src="img/img-aplus.jpg" href="#" alt="">
+                    <img class="project" src="img/img-kvast.jpg" href="#" alt="">
                 </div>
-            </div>
-            <div class="projects">
-                <div class="project">
-                    <img src="img/img-sedona.jpg" alt="">
-                    <a class="title" href="#">Sedona</a>
-                    <p class="description">Информационный сайт для туристов</p>
-                    <a class="price" href="#">9 900 руб.</a>
+                <div class="pagination">
+                    <a class="active-page" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Следующая</a>
                 </div>
-                <img class="project" src="img/img-pink.jpg" href="#" alt="">
-                <img class="project" src="img/img-barbershop.jpg" href="#" alt="">
-                <img class="project" src="img/img-mishka.jpg" href="#" alt="">
-                <img class="project" src="img/img-aplus.jpg" href="#" alt="">
-                <img class="project" src="img/img-kvast.jpg" href="#" alt="">
-            </div>
-            <div class="pagination">
-                <a class="active-page" href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">Следующая</a>
             </div>
         </main>
         <footer class="main-footer">
