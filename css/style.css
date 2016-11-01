@@ -147,29 +147,10 @@ h2 {
 
 }
 
-.project1{
-    margin-left: 30px;
+.project-index{
+    width: 25%;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 95px;
-}
-
-.project2{
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 103px;
-}
-
-.project3{
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 121px;
-}
-
-.project4{
-    display: inline-block;
-    vertical-align: middle;
-    
 }
 
 .main-footer{
@@ -185,12 +166,8 @@ h2 {
     float: left;
 }
 
-.social-btn-vk{
-    margin-right: 12px;
-}
-
-.social-btn-fb{
-    margin-right: 12px;
+.social-btn{
+    display: inline-block;
 }
 
 
@@ -259,10 +236,14 @@ width: 200px
     background-color: chocolate
 }
 
+label{
+    display: block;
+}
+
 .main-projects{
     background-color: mediumspringgreen
     float: right;
-    width: auto;
+    width: 100%;
     
 }
 
@@ -271,8 +252,14 @@ width: 200px
     vertical-align: top;
 }
 
+.projects{
+    font-size: 0;    
+}
+
 .project{
     display: inline-block;
+    vertical-align: top;
+    width: 360px;
     
 }
 
