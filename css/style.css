@@ -153,14 +153,16 @@ h2 {
 }
 
 .map-address{
-    background-image: url(../img/map.jpg);
+    background-image: url(../img/map.jpg) no-repeat;
+    padding: 0 20px;
+    background-size: cover;
 
 }
 
 .address{
-    width: 319px;
-    background-color: #fff;
-    vertical-align: middle;
+    width: 33.333333%;
+    min-height: 308px;
+    background: #fff;
 }
 
 .main-footer{
