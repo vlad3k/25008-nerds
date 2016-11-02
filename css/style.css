@@ -43,7 +43,6 @@ h2 {
 
 .logo{
     width: 160px;
-    display: block;
     float: left;
     margin-right: 40px;
     margin-top: 50px;
@@ -117,7 +116,7 @@ h2 {
 }
 
 .logo2{
-
+    display: block;
 }
 
 .achievement-title{ 
@@ -130,8 +129,7 @@ h2 {
 
 .achievement-item{
     float: left;
-    width: 100px;
-    margin-right: 20px;
+    width: 33.33333%;
 }
 
 .block-studio-achievements{
@@ -154,6 +152,17 @@ h2 {
     vertical-align: middle;
 }
 
+.map-address{
+    background-image: url(../img/map.jpg);
+
+}
+
+.address{
+    width: 319px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
 .main-footer{
     margin-top: 80px;
 }
@@ -173,6 +182,9 @@ h2 {
     display: inline-block;
     vertical-align: middle;
 }
+
+
+
 
 
 
@@ -246,13 +258,18 @@ label{
 .main-projects{
     background-color: mediumspringgreen;
     float: left;
-    width: 75%;
-    
+    width: 75%; 
 }
 
-.fil{
+.separate{
     background-color: red;
     vertical-align: top;
+    font-size: 0;
+}
+
+.separate a{
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .projects{
@@ -266,19 +283,41 @@ label{
     
 }
 
-.fil-item{
+.pagination{
+    font-size: 0;
+}
+
+.pagination a{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.separate-item{
     background-color: azure;
     display:inline-block;
-    
+    vertical-align: middle;
 }
 
 .price-type-name{
     background-color: azure;
     display:inline-block;
+    font-size: 0;
+}
+
+.price-type-name a{
+    display:inline-block;
+    vertical-align: middle;
 }
 
 .arrows{
     background-color: greenyellow;
     display:inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.arrows a{
+    display:inline-block;
+    vertical-align: middle;
 }
 
