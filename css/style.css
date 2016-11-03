@@ -20,13 +20,12 @@ h2 {
     font-weight: bold;
 }
 
-.slogan-header{
-    
-}
+
 
 .main-header{
     margin-bottom: 85px;
 }
+
 
 .container{
     width: 1160px;
@@ -153,16 +152,19 @@ h2 {
 }
 
 .map-address{
-    background-image: url(../img/map.jpg) no-repeat;
+    background-image: url(../img/map.jpg);
+    background-position: no-repeat;
     padding: 0 20px;
     background-size: cover;
+    height: 416px;
 
 }
 
 .address{
     width: 33.333333%;
-    min-height: 308px;
-    background: #fff;
+    height: 200px;
+    background: #f00;
+    
 }
 
 .main-footer{
@@ -298,6 +300,7 @@ label{
     background-color: azure;
     display:inline-block;
     vertical-align: middle;
+    font-size: 18px;
 }
 
 .price-type-name{
@@ -309,6 +312,7 @@ label{
 .price-type-name a{
     display:inline-block;
     vertical-align: middle;
+    font-size: 14px;
 }
 
 .arrows{
@@ -321,5 +325,6 @@ label{
 .arrows a{
     display:inline-block;
     vertical-align: middle;
+    font-size: 14px;
 }
 
