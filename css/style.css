@@ -102,6 +102,10 @@ h2 {
     
 }
 
+main{
+    display: block;
+}
+
 .studio{
     width: 66.666666%;
     float: left;
