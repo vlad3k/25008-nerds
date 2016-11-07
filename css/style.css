@@ -54,6 +54,14 @@ h2 {
     margin-top: 49px;
 }
 
+.logo:hover{
+    opacity: 0.8;
+}
+
+.logo:active{
+    opacity: 0.3;
+}
+
 .main-navigation{ 
     background-color: darkgray;
     float: left;
@@ -386,6 +394,7 @@ main{
 
 .logo2{
     display: block;
+    margin-bottom: 37px;
 }
 
 .achievement-title{ 
