@@ -1140,8 +1140,7 @@ label{
 }
 
 .project{
-    align-content:
-    position: absolute;
+    position: relative;
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
@@ -1149,7 +1148,79 @@ label{
     width: 360px;
     background: #eeeeee;
     box-sizing: border-box;
-    padding 24px 23px ;
+    margin-right: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 41px solid #e9e9e9;
+    min-height: 576px;
+    
+}
+
+.project::before{
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: -27px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.project::after{
+    content: "";
+    position: absolute;
+    left: 39px;
+    top: -27px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+
+.info{
+    position: absolute;
+    bottom: 1px;
+    font-size: 16px;
+    line-height: 18px;
+    background: #eeeeee;
+    box-sizing: border-box;
+    text-align: center;
+    width: 360px;
+    height: 231px;
+    padding-top: 35px;
+}
+
+.info a{
+    text-decoration: none;
+    color: white;
+}
+
+.info .title{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+.price{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fb565a; 
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 19px 62px;
+    border-radius: 2px;
+    color: white;
+}
+
+.price a{
+    color: white;
 }
 
 .pagination{
