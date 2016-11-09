@@ -13,7 +13,7 @@
                 <a class="logo" href="#"><img src="img/logo-nerds.png" alt=""></a>
                 <nav class="main-navigation">
                     <ul>
-                        <li>
+                        <li class="active">
                             <a href="#">Студия</a>
                         </li>
                         <li>
@@ -34,13 +34,39 @@
         </header>
         
         <div class="tagline-main ">
-        <!--Главная картинка с телефонами css-->
+        
             <div class="container">
                 <div class="slide">
-                    <div class="tagline">
-                        <b class="tagline-item1">Долго, дорого, скрупулезно.</b>
-                        <p class="tagline-item2">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения</p>
-                        <a class="tagline-btn" href="#">Узнать больше</a>
+                    <input type="radio" id="btn-1" name="toggle" checked>
+                    <input type="radio" id="btn-2" name="toggle">
+                    <input type="radio" id="btn-3" name="toggle">
+                    <div class="slider-controls">
+                        <label for="btn-1"></label>
+                        <label for="btn-2"></label>
+                        <label for="btn-3"></label>
+                    </div>
+                    <div class="slides">
+                        <div class="slide-text">
+                            <div class="tagline">
+                                <b class="tagline-item1">Долго, дорого, скрупулезно.</b>
+                                <p class="tagline-item2">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения</p>
+                                <a class="tagline-btn" href="#">Узнать больше</a>
+                            </div>
+                        </div>
+                        <div class="slide-text">
+                            <div class="tagline">
+                                <b class="tagline-item1">Любим математику как никто другой</b>
+                                <p class="tagline-item2">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                                <a class="tagline-btn" href="#">Узнать больше</a>
+                            </div>
+                        </div>
+                        <div class="slide-text">
+                            <div class="tagline">
+                                <b class="tagline-item1">Только ночь, только хардкор</b>
+                                <p class="tagline-item2">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                                <a class="tagline-btn" href="#">Узнать больше</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,7 +95,7 @@
             
             <div class="block-studio-achievements clearfix">
             <div class="studio">
-                <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+                <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
                 <p class="about-us">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
                 <b class="do">Выполняем заказы на разработку:</b>
                     <div class="feauters">
@@ -137,6 +163,11 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-content">
+            <button class="modal-content-close" type="button" tittle="Закрыть">
+            Закрыть
+            </button>
+        </div>
         
     </body>
 </html>

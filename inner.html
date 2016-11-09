@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link href="css/style.css" rel="stylesheet">
         <title>Nerds</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -40,36 +41,40 @@
             <form class="filters" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="filter">
                     <legend>Стоймость:</legend>
-                    <div class="scale-range">
-                        <div class="band">             <!-- Полоска -->
-                            <div class="scale-range1"> <!-- ползунок1 -->
-                        
+                    <div class="range-filter">
+                                     
+                        <div class="range-controls"> 
+                            <div class="scale">
+                                <div class="bar"></div>
                             </div>
-                            <div class="scale-range2"> <!-- Ползунок2 -->
-                        
-                            </div>
+                            <div class="toggle toggle-min"></div>
+                            <div class="toggle toggle-max"></div>
                         </div>
-             
+                        <div class="price-controls"> 
+                            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                            <label class="max-price">до<input name="max-price"
+                            type="text" value="15 000"></label>
+                        </div>
+                        
                     </div>
             
-                    <label for="from">От:</label><input id="from" type="text" name="from">
-                    <label for="before">До:</label><input id="before" type="text" name="before">
+                    
                 </fieldset>
                 <fieldset class="layouts clearfix">
                     <legend>Сетка:</legend>
-                    <input id="adaptive" type="radio" name="view" checked><label class="layout" for="adaptive">Адаптивная</label>
+                    <input id="adaptive" type="radio" name="view" checked><label class="layout active" for="adaptive">Адаптивная</label>
                     <input id="fix" type="radio" name="view"><label class="layout" for="fix">Фиксированная</label>
                     <input id="rubber" type="radio" name="view"><label class="layout" for="rubber">Резиновая</label>
                 </fieldset>
                 <fieldset class="features clearfix">
                     <legend>Особенности:</legend>
-                    <input id="slider" class="features" type="checkbox" name="slider" checked><label class="feature" for="slider">Слайдер</label>
+                    <input id="slider" class="features" type="checkbox" name="slider" checked><label class="feature active" for="slider">Слайдер</label>
                     <input id="advantage" type="checkbox" name="advantages"><label class="feature" for="advantage">Блок преемуществ</label>
-                    <input id="news" type="checkbox" name="news" checked><label class="feature" for="news">Новости</label>
+                    <input id="news" type="checkbox" name="news" checked><label class="feature active" for="news">Новости</label>
                     <input id="gallery" type="checkbox" name="gallery"><label class="feature" for="gallery">Галерея</label>
                     <input id="basket" type="checkbox" name="basket"><label class="feature" for="basket">Корзина</label>
                 </fieldset>
-                <input type="submit" name="show" value="Показать">
+                <input class="to-show" type="submit" name="show" id="show" value="Показать">
             </form>
             <div class="main-projects">
                 <div class="separate">
@@ -80,8 +85,8 @@
                         <a href="#">По названию</a>
                     </div>
                     <div class="arrows">
-                        <a class="down active-arrow" href="#">По убыванию</a> <!--Стрелочки для сортировки по названию-->
-                        <a class="up" href="#">По возрастанию</a>
+                        <a class="down active-arrow" href="#"></a> <!--Стрелочки для сортировки по названию-->
+                        <a class="up active" href="#"></a>
                     </div>
                 </div>
                 <div class="projects ">
