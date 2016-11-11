@@ -21,8 +21,8 @@ h2 {
     line-height: 45px;
     color: #000000;
     font-weight: bold;
-    margin-bottom: 30px;
-    
+    margin-bottom: 33px;
+    margin-top: 34px;
 }
 
 b{
@@ -39,10 +39,6 @@ b{
     width: 1160px;
     margin: 0 20px;
     margin: 0 auto;
-    
-    /*только для сетки*/ 
-    background: rgba(234, 255, 45, 0.2); 
-    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .clearfix::after{
@@ -67,7 +63,6 @@ b{
 }
 
 .main-navigation{ 
-    background-color: darkgray;
     float: left;
     margin-right: 40px;
     vertical-align: bottom;
@@ -171,7 +166,6 @@ b{
 
 .tagline-main{
     background-color: #eeeeee;
-    padding-bottom: 20px;
 }
 
 
@@ -183,9 +177,7 @@ b{
     width: 1160px;
     height: 425px;
     margin:0 auto;
-    
-    
-    margin-bottom: 58px;
+    margin-bottom: 78px;
 }
 
 .slide input[type="radio"]{
@@ -271,8 +263,9 @@ b{
     overflow: hidden;
 }
 
+
 .tagline{
-    width: 380px;
+    width: 517px;
     padding: 72px 0px;
     color: #283136;
     font-size: 0;
@@ -301,7 +294,7 @@ b{
     color: white;
     text-transform: uppercase;
     cursor: pointer;
-    padding: 16px 55px;
+    padding: 17px 54px;
     border-radius: 2px;
 }
 
@@ -366,7 +359,6 @@ b{
 }
 
 
-
 .service-item p{
     
 }
@@ -384,7 +376,7 @@ b{
     cursor: pointer;
     padding: 16px 40px;
     border-radius: 2px;
-    margin-top: 13px;
+    margin-top: 16px;
 }
 
 .websites .order:hover{
@@ -473,7 +465,7 @@ b{
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: -3px;
+    margin-top: -6px;
 }
 
 
@@ -487,6 +479,8 @@ main{
     padding-right: 100px;
     box-sizing: border-box;
 }
+
+
 
 .about-us{
     margin-bottom: 39px;
@@ -526,8 +520,10 @@ main{
 }
 
 .achievement-title{
+    padding-left: 43px;
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: -4px;
 }
 
 .procent{
@@ -536,23 +532,24 @@ main{
 }
 
 .procent-item{
-    font-size: 20px;
+    font-size: 25px;
     vertical-align: super;
 }
 
 .achievement{
     line-height: 18px;
-    margin-top: -10px;
+    margin-top: -15px;
 }
 
 
 .logo2{
     display: block;
+    padding-left: 26px;
     margin-bottom: 37px;
 }
 
 .achievement-title{ 
-   
+    margin-bottom:
 }
 
 .achievement-items{
@@ -561,7 +558,17 @@ main{
 
 .achievement-item{
     float: left;
-    width: 33.33333%;
+    margin-left: 26px;
+    width: 30%
+}
+
+.achievement-item:nth-child(2){
+    margin-left: 3px;
+    
+}
+
+.achievement-item:nth-child(3){
+    margin-left: 3px;
 }
 
 .block-studio-achievements{
@@ -575,10 +582,8 @@ main{
 
 .projects{
     padding-top: 46px;
-    padding-bottom: 32px;
+    padding-bottom: 37px;
     font-size: 0;
-    border-bottom: 2px solid #eeeeee;
-
 }
 
 .project-index{
@@ -613,7 +618,7 @@ main{
     float: left;
     height: 200px;
     background: #ffffff;
-    padding: 
+    padding-right: px ;
     font-size: 16px;
     line-height: 18px;
 }
@@ -745,7 +750,7 @@ main{
 
 
 .footer-text{
-    margin-top: 79px;
+    margin-top: 74px;
 }
 
 .friend {
@@ -753,7 +758,6 @@ main{
     font-size: 36px;
     line-height: 36px;
     font-weight: bold;
-    margin-bottom: 
 }
 
 .discount {
@@ -767,14 +771,167 @@ main{
     position: absolute;
     top: 1706px;
     left: 50%;
+    box-sizing: border-box;
     width: 960px;
     margin-left: -480px;
     padding: 73px 100px;
     color: #000000;
     background: #ffffff;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-close{
+    position: absolute;
+    top: 77px;
+    left: 850px;
+    font-size: 0px;
+    border: 0;
+    cursor: pointer;
+    opacity: 0.3;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+}
+
+.modal-content-close:hover{
+    opacity: 1;
+}
+
+.modal-content-close:active{
+    opacity: 0.1;
 }
 
 
+.modal-content-close::before,
+.modal-content-close::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    width: 23px;
+    height: 4px;
+    background-color: #fb565a;
+    border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content h2{
+    margin-top: -7px;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.modal-content label{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.modal-content .label-name{
+    
+    
+}
+
+.letter-form{
+    margin-top: 41px;
+    margin-left: 2px;
+    font-size: 0;
+}
+
+.letter-form input[type="text"]{
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    width: 100%;
+    padding: 13px 14px;
+    box-sizing: border-box;
+    margin-top: 9px;
+    border: 2px solid #d7dcde;
+}
+
+.letter-form input[type="text"]:hover{
+    border-color: #b4b9bb;
+    color: #a1a1a1;
+}
+
+.letter-form input[type="text"]:active{
+    border-color: #000000;
+    color: #444444;
+}
+
+
+.letter-form label:nth-child(1){
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.letter-form label:nth-child(2){
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.letter-item{
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.letter-form textarea{
+    width: 728px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    padding: 13px 14px;
+    height: 89px;
+    margin-bottom: 11px;
+    border: 2px solid #d7dcde;
+}
+
+.letter-form .btn{
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-top: 23px;
+    background-color: #fb565a; 
+    line-height: 18px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 17px 83px;
+    border-radius: 2px;
+}
+
+.letter-form textarea:hover{
+    border-color: #b4b9bb;
+    color: #a1a1a1;
+}
+
+.letter-form textarea:active{
+    border-color: #000000;
+    color: #444444;
+}
+
+.letter-form .btn:hover{
+    background-color: #e74246;
+}
+
+.letter-form .btn:active{
+    background-color: #d7373b;
+    color: #e37376;
+    box-shadow: inset 0 3px 0 rgba(193,49,53,1);
+}
 
 
 /*------------------------------------------------------------*/
@@ -785,27 +942,27 @@ main{
 
 .main-title{
     background-color: #eeeeee;
-    padding-bottom: 110px;
-    
+    padding-top: 1px;
+    padding-bottom: 71px;
+    margin-bottom: 54px;
 }
 
 h1{
     font-size: 55px;
     line-height: 55px;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
-    
+    padding-top: 34px;
+   
 }
 
 
 
 .filter{
-    margin-bottom: 55px;
+    margin-bottom: 54px;
 }
 
 .filter > legend{
-    margin-bottom: 50px;
+    margin-bottom: 47px;
 }
 
 .layouts > legend{
@@ -832,7 +989,7 @@ h1{
 }
 
 .range-controls .bar{
-    width: 70%;
+    width: 62%;
     height: 2px;
     background: #00ca74;
 }
@@ -851,11 +1008,11 @@ h1{
 }
 
 .range-controls .toggle-min{
-    left: 20px;
+    left: 19px;
 }
 
 .range-controls .toggle-max{
-    left: 145px;
+    left: 161px;
 }
 
 .price-controls{
@@ -888,8 +1045,13 @@ h1{
     background: #f1f1f1;
 }
 
+.filters label:disabled{
+    opacity: 0.3;
+}
+
 .filters fieldset{
     border: none;
+    margin-left: -1px;
 }
 
 .filters legend{
@@ -899,10 +1061,12 @@ h1{
     text-transform: uppercase;
 }
 
-.layouts input,
-.features input{
+.layouts input[type="radio"],
+.features input[type="checkbox"]{
     display: none;
 }
+
+
 
 .filters fieldset{
  padding: 0;
@@ -910,10 +1074,11 @@ h1{
 
 .layouts label{
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .layouts label:last-child{
-    margin-bottom: 43px;
+    margin-bottom: 44px;
 }
 
 .features legend{
@@ -922,6 +1087,7 @@ h1{
 
 .features label{
     margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .features label:last-child{
@@ -935,26 +1101,27 @@ h1{
 }
 
 
-.layouts label::before{
+input[type="radio"] + label::before{
     position: absolute;
     content: "";
     width: 31px;
     height: 26px;
     background: url(../img/spritesheet.png) no-repeat;
-    top: -3px;
-    left: -5px;
+    top: -2px;
+    left: -4px;
     background-position: 0px -117px;  
     cursor: pointer;
+    opacity: 0.4;
 }
 
-.layouts .active::before{
+input[type="radio"]:checked + label::before{
     position: absolute;
     content: "";
     width: 31px;
     height: 26px;
     background: url(../img/spritesheet.png) no-repeat;
-    top: -4px;
-    left: -5px;
+    top: -2px;
+    left: -3px;
     background-position: 0px -152px;  
     cursor: pointer;
 }
@@ -965,19 +1132,20 @@ h1{
     float: left;
 }
 
-#adaptive,
-#fix,
-#rubber{
-    float: left;
+input[type="radio"] + label:hover::before{
+    opacity: 1;
 }
 
+input[type="radio"] + label:disabled::before{
+    opacity: 0.1;
+}
 
 
 .features label{
     position: relative;
 }
 
-.features label::before{
+input[type="checkbox"] + label::before{
     position: absolute;
     content: "";
     width: 31px;
@@ -987,9 +1155,10 @@ h1{
     left: -4px;
     background-position: 0px 0px;  
     cursor: pointer;
+    opacity: 0.4;
 }
 
-.features .active::before{
+input[type="checkbox"]:checked + label::before{
     position: absolute;
     content: "";
     width: 31px;
@@ -1001,13 +1170,18 @@ h1{
     cursor: pointer;
 }
 
-#slider,
-#advantage,
-#news,
-#gallery,
-#basket{
-    float: left;
+input[type="checkbox"] + label:hover::before{
+    opacity: 1;
 }
+
+input[type="checkbox"] + label:disabled::before{
+    opacity: 0.1;
+}
+
+
+
+
+
 
 .feature{
     float: left;
@@ -1017,18 +1191,20 @@ h1{
 
 
 
+
+
 .filters{
     float: left;
     width: 25%;
-    padding-bottom: 1390px;
-    background-color: chocolate
 }
 
 label{
     display: block;
 }
 
-#show{
+
+
+.to-show{
     border: none;
     padding: 16px 86px;
     font-size: 16px;
@@ -1037,15 +1213,25 @@ label{
     font-weight: 600;
     cursor: pointer;
     border-radius: 3px;
+    background-color: #eeeeee;
+}
+
+.to-show:hover{
+    background-color: #dfdfdf;
+}
+
+.to-show:active{
+    background-color: #d5d5d5;
+    color: #959595;
+    box-shadow: inset 0 3px 0 rgba(191,191,191,1);
 }
 
 
 
 
 
-
 .separate-item{
-    background-color: azure;
+    
     display:inline-block;
     vertical-align: top;
     font-size: 18px;
@@ -1053,14 +1239,14 @@ label{
     text-transform: uppercase;
     font-weight: bold;
     margin-left: 110px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 .price-type-name{
-    background-color: azure;
+    
     display:inline-block;
     font-size: 0;
-    margin-left: 268px;
+    margin-left: 266px;
 }
 
 .price-type-name a{
@@ -1070,8 +1256,8 @@ label{
     line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
-    margin-top: 6px;
-    margin-right: 26px;
+    margin-top: 2px;
+    margin-right: 27px;
     color: #000000;
 }
 
@@ -1084,8 +1270,14 @@ label{
    color: #b2b2b2; 
 }
 
+.price-type-name a:hover{
+    color: #666666;
+}
+.price-type-name a:active{
+    color: #000000;
+}
+
 .arrows{
-    background-color: greenyellow;
     display:inline-block;
     vertical-align: middle;
     font-size: 0;
@@ -1099,34 +1291,45 @@ label{
     font-size: 0;
 }
 
+
 .arrows a::before{
     content: '';
-    position: absolute; /* Абсолютное позиционирование */
-    left: 0px; bottom: -14px; /* Положение треугольника */
-    border: 5px solid transparent; /* Прозрачные границы */
-    border-top: 9px solid #000000; /* Добавляем треугольник */  
+    position: absolute; 
+    left: 0px; 
+    bottom: -10px; 
+    border: 4px solid transparent; 
+    border-top: 9px solid #000000; 
+}
+
+.arrows a:hover::before{
+    border-bottom-color: #999999;
 }
 
 .arrows a::after{
     content: '';
     position: absolute; 
     left: 29px; 
-    bottom: -8px; 
-    border: 5px solid transparent;
+    bottom: -5px; 
+    border: 4px solid transparent;
     border-bottom: 9px solid #cccccc;
     color: #cccccc;    
 }
 
+.arrows a:hover::after{
+    border-bottom-color: #999999;
+}
+
 .main-projects{
-    background-color: mediumspringgreen;
+    
     float: left;
     width: 75%; 
 }
 
 .separate{
-    background-color: red;
+    
     vertical-align: top;
     font-size: 0;
+    margin-bottom: -9px;
 }
 
 .separate a{
@@ -1136,7 +1339,9 @@ label{
 
 .projects{
     position: relative;
-    font-size: 0;    
+    font-size: 0;
+    padding-left: 110px;
+    margin-bottom: -9px;
 }
 
 .project{
@@ -1147,13 +1352,17 @@ label{
     line-height: 18px;
     width: 360px;
     background: #eeeeee;
-    box-sizing: border-box;
     margin-right: 40px;
+    box-sizing: border-box;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-top: 41px solid #e9e9e9;
     min-height: 576px;
-    
+    margin-bottom: 31px;
+}
+
+.project:nth-child(2n){
+    margin-right: 0px;
 }
 
 .project::before{
@@ -1178,6 +1387,21 @@ label{
     border-radius: 50%;
 }
 
+.img-project{
+    position: relative;
+}
+
+.img-project::before{
+    content: "";
+    position: absolute;
+    left: 62px;
+    top: -27px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+}
+
 
 .info{
     position: absolute;
@@ -1188,13 +1412,16 @@ label{
     box-sizing: border-box;
     text-align: center;
     width: 360px;
-    height: 231px;
-    padding-top: 35px;
+    height: 232px;
+    padding-top: 25px;
+    padding-right: 65px;
+    padding-left: 65px;
+    padding-bottom: 43px;
+    
 }
 
 .info a{
     text-decoration: none;
-    color: white;
 }
 
 .info .title{
@@ -1203,7 +1430,6 @@ label{
     font-weight: bold;
     line-height: 30px;
     text-transform: uppercase;
-    margin-bottom: 19px;
 }
 
 .price{
@@ -1217,20 +1443,64 @@ label{
     padding: 19px 62px;
     border-radius: 2px;
     color: white;
+    margin-top: 11px;
 }
 
-.price a{
-    color: white;
+.price:hover{
+    background-color: #e74246;
+}
+
+.price:active{
+    background-color: #d7373b;
+    color: #e37376;
+    box-shadow: inset 0 3px 0 rgba(193,49,53,1);
 }
 
 .pagination{
     font-size: 0;
+    margin-left: 112px;
+    margin-bottom: -22px;
 }
+
 
 .pagination a{
     display: inline-block;
     vertical-align: middle;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 18px 21px;
+    background: #eeeeee;
+    margin-right: 9px;
+    border-radius: 3px;
 }
+
+.pagination a:hover{
+    background-color: #dfdfdf;
+}
+
+.pagination a:active{
+    background-color: #d5d5d5;
+    color: #959595;
+    box-shadow: inset 0 3px 0 rgba(191,191,191,1);
+}
+
+.pagination .active-page{
+    padding: 15px 17px;
+    background-color: white;
+    border: 3px solid #dbdbdb;
+}
+
+.pagination .next{
+    padding-left: 79px;
+    padding-right: 79px;
+    margin-left: 2px;
+}
+
+
 
 
 
