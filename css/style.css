@@ -25,6 +25,12 @@ h2 {
     margin-top: 34px;
 }
 
+input,
+textarea{
+    outline: none;
+}
+
+
 b{
     display: block;
 }
@@ -119,9 +125,7 @@ b{
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #fb565a;
-    
-    
+    background-color: #fb565a; 
 }
 
 
@@ -183,22 +187,21 @@ b{
 .slide input[type="radio"]{
     position: absolute;
     opacity: 0;
+    outline: none;
 }
 
 .slider-controls{
     position: absolute;
     bottom: 106px;
     left: 50%;
-    Width: 200px;
-    height: 10px;
     margin-left: -100px;
     text-align: center;
     z-index: 1000;
 }
 
 .slider-controls label{
+    position: relative;
     display: inline-block;
-    
     width: 18px;
     height: 18px;
     margin: 0 7px;
@@ -219,7 +222,7 @@ b{
     border-radius: 50%;
     left: -71px;
     right: 0;
-    top: 7px;
+    top: -1px;
     bottom: 0;
     margin: auto;
 }
@@ -231,9 +234,9 @@ b{
     height: 4px;
     border: 2px solid #c1c1c1;
     border-radius: 50%;
-    left: 0;
+    left: -73px;
     right: 0;
-    top: 7px;
+    top: -1px;
     bottom: 0;
     margin: auto;
 }
@@ -247,7 +250,7 @@ b{
     border-radius: 50%;
     left: 55px;
     right: 0;
-    top: 7px;
+    top: -6px;
     bottom: 0;
     margin: auto;
 }
@@ -870,6 +873,11 @@ main{
     color: #444444;
 }
 
+.letter-form input[type="text"]:focus{
+    border-color: #000000;
+    color: #444444;
+}
+
 
 .letter-form label:nth-child(1){
     padding-right: 20px;
@@ -879,6 +887,13 @@ main{
 .letter-form label:nth-child(2){
     padding-left: 20px;
     box-sizing: border-box;
+}
+
+input::-webkit-input-placeholder:active {
+    color: #444444;
+}
+input:-moz-placeholder:active  {
+    color: #444444;
 }
 
 .letter-item{
@@ -895,6 +910,11 @@ main{
     height: 89px;
     margin-bottom: 11px;
     border: 2px solid #d7dcde;
+}
+
+.letter-form textarea:focus{
+    border-color: #000000;
+    color: #444444;
 }
 
 .letter-form .btn{
@@ -932,6 +952,8 @@ main{
     color: #e37376;
     box-shadow: inset 0 3px 0 rgba(193,49,53,1);
 }
+
+
 
 
 /*------------------------------------------------------------*/
@@ -1064,12 +1086,13 @@ h1{
 .layouts input[type="radio"],
 .features input[type="checkbox"]{
     display: none;
+    outline:none;
 }
 
 
 
 .filters fieldset{
- padding: 0;
+    padding: 0;
 }
 
 .layouts label{
@@ -1108,7 +1131,7 @@ input[type="radio"] + label::before{
     height: 26px;
     background: url(../img/spritesheet.png) no-repeat;
     top: -2px;
-    left: -4px;
+    left: -3px;
     background-position: 0px -117px;  
     cursor: pointer;
     opacity: 0.4;
@@ -1164,7 +1187,7 @@ input[type="checkbox"]:checked + label::before{
     width: 31px;
     height: 28px;
     background: url(../img/sprite-checkbox.png) no-repeat;
-    top: -5px;
+    top: -6px;
     left: -4px;
     background-position: 0px -32px;  
     cursor: pointer;
@@ -1178,19 +1201,10 @@ input[type="checkbox"] + label:disabled::before{
     opacity: 0.1;
 }
 
-
-
-
-
-
 .feature{
     float: left;
     width: 200px;
 }
-
-
-
-
 
 
 .filters{
@@ -1201,8 +1215,6 @@ input[type="checkbox"] + label:disabled::before{
 label{
     display: block;
 }
-
-
 
 .to-show{
     border: none;
@@ -1243,7 +1255,6 @@ label{
 }
 
 .price-type-name{
-    
     display:inline-block;
     font-size: 0;
     margin-left: 266px;
@@ -1320,13 +1331,12 @@ label{
 }
 
 .main-projects{
-    
     float: left;
     width: 75%; 
+    margin-bottom: -23px;
 }
 
 .separate{
-    
     vertical-align: top;
     font-size: 0;
     margin-bottom: -9px;
@@ -1402,6 +1412,16 @@ label{
     border-radius: 50%;
 }
 
+.project:hover .info{
+    border-color: #4d4d4d;
+}
+
+.project:hover .info{
+    display: block;
+    border-color: #4d4d4d;
+}
+
+
 
 .info{
     position: absolute;
@@ -1417,7 +1437,7 @@ label{
     padding-right: 65px;
     padding-left: 65px;
     padding-bottom: 43px;
-    
+    display: none;
 }
 
 .info a{
@@ -1458,8 +1478,8 @@ label{
 
 .pagination{
     font-size: 0;
-    margin-left: 112px;
-    margin-bottom: -22px;
+    
+    
 }
 
 
