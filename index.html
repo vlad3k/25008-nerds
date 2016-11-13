@@ -166,7 +166,7 @@
             <h2 class="modal-content-title">Напишите нам</h2>
             <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
             
-            <label class="label-name">Ваше имя:<input class="input-name" id="name-id" type="text" name="login" placeholder="Представьтесь, пожалуйста"></label>
+            <label class="label-name">Ваше имя:<input class="input-name" id="name-id" type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
             
             <label>Ваш e-mail:<input class="input-e-mail" id="e-mail-id" type="text" name="e-mail" placeholder="Для отправки ответа"></label>
             <label class="letter-item">Текст письма:</label>
@@ -175,5 +175,24 @@
             </form>
         </div>
         
+        <script>
+            var link = document.querySelector(".write");
+            var popup = document.querySelector(".modal-content");
+            var close = document.querySelector(".modal-content-close");
+            var name = popup.querySelector(".input-name");
+            var email = popup.querySelector(".input-e-mail");
+            
+            
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.add("modal-content-show");
+                name.focus();
+            });
+            
+            close.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.remove("modal-content-show");
+            })
+        </script>
     </body>
 </html>

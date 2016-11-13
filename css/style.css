@@ -808,9 +808,10 @@ main{
     margin-top: 10px;
 }
 
+
 .modal-content {
-    position: absolute;
-    top: 1706px;
+    position: fixed;
+    top: 20%;
     left: 50%;
     box-sizing: border-box;
     width: 960px;
@@ -820,6 +821,10 @@ main{
     background: #ffffff;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
     display: none;
+}
+
+.modal-content-show{
+    display: block;
 }
 
 .modal-content-close{
@@ -1291,7 +1296,7 @@ label{
 .price-type-name{
     display:inline-block;
     font-size: 0;
-    margin-left: 266px;
+    margin-left: 26px;
     
 }
 
@@ -1380,6 +1385,7 @@ label{
     display: inline-block;
     vertical-align: middle;
 }
+
 
 .projects{
     position: relative;
