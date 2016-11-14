@@ -28,6 +28,7 @@ h2 {
 input,
 textarea{
     outline: none;
+    resize: none;
 }
 
 
@@ -643,7 +644,7 @@ main{
     height: 416px;
     padding-top: 54px;
     box-sizing: border-box;
-    
+    background-position: -89px;
 }
 
 .address{
@@ -704,6 +705,7 @@ main{
 
 .main-footer{
     margin-top: 80px;
+    margin-bottom: 75px;
 }
 
 .footer-social{
@@ -825,6 +827,11 @@ main{
 
 .modal-content-show{
     display: block;
+    animation: bounce 0.6s;
+}
+
+.modal-error{
+    animation: shake 0.6s;
 }
 
 .modal-content-close{
@@ -1282,25 +1289,25 @@ label{
 
 
 
-.separate-item{
+.separate-items{
     display:inline-block;
     vertical-align: top;
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
     font-weight: bold;
-    
+    margin-right: 240px;
     margin-top: 2px;
 }
 
-.price-type-name{
+.separate-item{
     display:inline-block;
     font-size: 0;
     margin-left: 26px;
-    
+    vertical-align: top;
 }
 
-.price-type-name a{
+.separate-item a{
     display:inline-block;
     vertical-align: middle;
     font-size: 14px;
@@ -1312,19 +1319,19 @@ label{
     color: #000000;
 }
 
-.price-type-name a:last-child{
+.separate-item a:last-child{
     margin-right: 45px;
     color: #b2b2b2;
 }
 
-.price-type-name a:nth-child(2){
+.separate-item a:nth-child(2){
    color: #b2b2b2; 
 }
 
-.price-type-name a:hover{
+.separate-item a:hover{
     color: #666666;
 }
-.price-type-name a:active{
+.separate-item a:active{
     color: #000000;
 }
 
@@ -1341,6 +1348,16 @@ label{
     display:inline-block;
     vertical-align: middle;
     font-size: 0;
+}
+
+.arrows a:hover{
+    border-top-color: #999999;
+    border-bottom-color: #999999;
+}
+
+.arrows a:active{
+    border-top-color: #000000;
+    border-bottom-color: #000000;
 }
 
 .arrows .down{
@@ -1571,7 +1588,30 @@ label{
     margin-left: 2px;
 }
 
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
-
-
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
 
