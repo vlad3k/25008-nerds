@@ -9,7 +9,7 @@
     <body>
         <header class="main-header">
             <div class="container clearfix">
-                <a class="logo" href="index.html"><img src="img/logo-nerds.png" alt=""></a>
+                <a class="logo" href="index.html"><img src="img/logo-nerds.png" alt="" width="160px" height="65px"></a>
                 <nav class="main-navigation">
                     <ul>
                         <li>
@@ -92,7 +92,7 @@
                 <div class="projects ">
                     <div class="project">
                         <div class="img-project">
-                            <img src="img/img-sedona.jpg" alt="">
+                            <img src="img/img-sedona.jpg" alt="" width="360px" height="576px">
                         </div>
                         <div class="info">
                             <a class="title" href="#">Sedona</a>
@@ -102,7 +102,7 @@
                     </div>
                     <div class="project">
                         <div class="img-project">    
-                            <img src="img/img-pink.jpg" alt="">
+                            <img src="img/img-pink.jpg" alt="" width="360px" height="576px">
                         </div>
                         <div class="info">
                             <a class="title" href="#">Pink app</a>
@@ -112,7 +112,7 @@
                     </div>
                     <div class="project">
                         <div class="img-project"> 
-                            <img  src="img/img-barbershop.jpg" alt="">
+                            <img  src="img/img-barbershop.jpg" alt="" width="360px" height="576px">
                         </div>
                         <div class="info">
                             <a class="title" href="#">Barbershop</a>
@@ -122,7 +122,7 @@
                     </div>
                     <div class="project">
                         <div class="img-project">
-                            <img src="img/img-mishka.jpg" alt="">
+                            <img src="img/img-mishka.jpg" alt="" width="360px" height="576px">
                         </div>
                         <div class="info">
                             <a class="title" href="#">Mishka</a>
@@ -132,7 +132,7 @@
                     </div>
                     <div class="project">
                         <div class="img-project">
-                            <img src="img/img-aplus.jpg" alt="">
+                            <img src="img/img-aplus.jpg" alt="" width="360px" height="576px">
                         </div>
                         <div class="info">
                             <a class="title" href="#">A Plus</a>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="project">
                         <div class="img-project">
-                            <img src="img/img-kvast.jpg" alt="">
+                            <img src="img/img-kvast.jpg" alt="" width="360px" height="576px">
                         </div>
                         <div class="info">
                             <a class="title" href="#">Кваст</a>
@@ -159,7 +159,7 @@
                 </div>
             </div>
         </main>
-        <footer class="main-footer">
+        <footer class="main-footer clearfix">
             <div class="map-address">
                 <div class="container clearfix">
                     <div class="address">
@@ -182,5 +182,19 @@
                 <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
             </div>
         </footer>
+        <div class="modal-content">
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <h2 class="modal-content-title">Напишите нам</h2>
+            <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+            
+            <label class="label-name">Ваше имя:<input class="input-name" id="name-id" type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
+            
+            <label>Ваш e-mail:<input class="input-e-mail" id="e-mail-id" type="text" name="e-mail" placeholder="Для отправки ответа"></label>
+            <label class="letter-item">Текст письма:</label>
+            <textarea placeholder="В свободной форме"></textarea>
+            <button class="btn" type="submit">Отправить</button>
+            </form>
+        <script src="js/popup.js"></script>
+        </div>
     </body>
 </html>
