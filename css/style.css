@@ -636,9 +636,14 @@ main{
     opacity: 0.1;
 }
 
-    
+.interaktive-map{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
 
 .map-address{
+    position: relative;
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -646,9 +651,11 @@ main{
     padding-top: 54px;
     box-sizing: border-box;
     background-position: -89px;
+    
 }
 
 .address{
+    position: relative;
     padding: 47px 50px;
     float: left;
     height: 200px;
@@ -656,6 +663,7 @@ main{
     font-size: 16px;
     line-height: 18px;
     padding-bottom: 60px;
+    z-index: 23
 }
 
 .nds{
@@ -813,10 +821,12 @@ main{
 
 .modal-content {
     position: fixed;
-    top: 20%;
+    top: 150px;
     left: 50%;
+    margin-left: px;
     box-sizing: border-box;
     width: 960px;
+    height: 590px;
     margin-left: -480px;
     padding: 73px 100px;
     color: #000000;
